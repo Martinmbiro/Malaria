@@ -45,7 +45,7 @@ Hello again 👋
 > The saved model's `state_dict` can be found in the drive folder linked [here](https://drive.google.com/file/d/1nkHgxkgZwAOtQVn0nKYwT7YKkCi5ukTq/view?usp=sharing)  
 
 > ✋ **Note**
-+ Due to the randomness in Machine Learning, you might not necessarily achieve the same metrics I did
++ Due to the randomness in Machine Learning, you might not necessarily achieve the same metrics I did - if you choose to train the model afresh
 + This was just a pet project, hence I don't claim to be an expert in the Medical field. Nevertheless, the dataset was photographed and manually annotated by an expert, as described [here](https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets)
 
 
