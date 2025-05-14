@@ -1,4 +1,4 @@
-# Identifying Malaria in Cell Images
+# Diagnosing Malaria from Cell Images
 
 <p align="center">
   <img src='pics/malaria.png'  width='500'/>
@@ -8,7 +8,7 @@ Hello again 👋
 + In this repository, I leverage the power of [transfer learning](https://www.datacamp.com/blog/what-is-transfer-learning-in-ai-an-introductory-guide) in training a computer vision model to classify cells as either `Infected` or `Uninfected` with Malaria, using the _cell images for detecting malaria dataset_ linked [here](https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria). The entire dataset consists of `27558` images, but was split into `22046` training images, `4134` validation images, and `1378` test images.
 + The model architecture used for this exercise is [resnet18](https://huggingface.co/timm/resnet18.a1_in1k), from the [`timm`](https://huggingface.co/docs/timm/en/index) library. The pre-trained model is fine-tuned for our task-specific problem by altering the `classifier` layer and subsequent retraining.
 + The first notebook, `01 Malaria modular.ipynb` entails turning reusable code into modules, while the second notebook, `02 Malaria end to end.ipynb` is where I put everything together.
-+ Comments, working code, and links to the latest official documentation are included every step of the way. There's links to open each notebook (_labeled 01...02_) in Google Colab - feel free to play around with the code.
++ Comments, working code, and links to the latest official documentation are included every step. There are links to open each notebook (_labeled 01...02_) in Google Colab - feel free to play around with the code.
 
 ## Milestones 🏁
 **Concepts covered in this project include:**  
@@ -26,7 +26,7 @@ Hello again 👋
 3. [`scikit-learn`](https://scikit-learn.org/stable/#) - A free, open-source library that offers Machine Learning tools for the Python programming language
 4. [`numpy`](https://numpy.org/) - The fundamental package for scientific computing with Python
 5. [`matplotlib`](https://matplotlib.org/) - A comprehensive library for making static, animated, and interactive visualizations in Python
-6. [`seaborn`](https://seaborn.pydata.org/index.html) - A python data visualization library based on `matplotlib` that provides a high-level interface for drawing attractive and informative statistical graphics
+6. [`seaborn`](https://seaborn.pydata.org/index.html) - A Python data visualization library based on `matplotlib` that provides a high-level interface for drawing attractive and informative statistical graphics
 7. [`requests`](https://requests.readthedocs.io/en/latest/) - An elegant and simple HTTP library for Python
 8. [`torchinfo`](https://github.com/TylerYep/torchinfo) - A library for viewing model summaries in PyTorch
 9. [`PIL`](https://pillow.readthedocs.io/) - A Python library for image manipulation and basic image processing tasks
@@ -38,14 +38,14 @@ Hello again 👋
 
 ## Results 📈
 > On a scale of `0` -> `1`, the final best-performing model achieved:
-+ A weighted `precision`, `recall` and `f1_score` of `0.97`
++ A weighted `precision`, `recall`, and `f1_score` of `0.97`
 + An overall model `accuracy` of `0.9717`
 + An overall `roc_auc_score` of `0.992`
 
 > The saved model's `state_dict` can be found in the drive folder linked [here](https://drive.google.com/file/d/1nkHgxkgZwAOtQVn0nKYwT7YKkCi5ukTq/view?usp=sharing)  
 
 > ✋ **Note**
-+ Due to the randomness in Machine Learning, you might not necessarily achieve the same metrics I did - if you choose to train the model afresh
++ Due to the randomness in Machine Learning, you might not necessarily achieve the same metrics I did, if you choose to train the model afresh
 + This was just a pet project, hence I don't claim to be an expert in the Medical field. Nevertheless, the dataset was photographed and manually annotated by an expert, as described [here](https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets)
 
 
